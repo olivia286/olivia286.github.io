@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>能量水晶</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .gold{
+        color: yellow;
+    }
+    .container {
+        width: 100%;
+    }
+
+    .NAMbar {
+        width: 100%;
+    }
+
+    .scetion-1 {
+        margin: 30px;
+        width: 100%;
+        margin: 30px 0px;
+    }
+
+    .swiper-slide img {
+        width: 60%;
+    }
+
+    .swiper-container {
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .tab-content {
+        margin: 10px 0px;
+    }
+
+    .addPhoto {
+        width: 100%;
+        background-image: url("img/20200417_0007.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 10px;
+    }
+
+    .aosbox {
+        width: 30%;
+        margin: 0px 80px;
+        font-size: 21px;
+        font-weight: 900;
+        color: black;
+        padding: 180px 0px;
+    }
+
+
+    @media (max-width: 540px) {
+        .parallax {
+            background-attachment: scroll;
+        }
+    }
+
+    .scetion-2 {
+        margin: 60px 0px 40px 0px;
+    }
+
+    .scetion-3 {
+        width: 100%;
+        background-color: rgb(247, 247, 247);
+        margin: 30px 0px 20px 0px;
+    }
+
+    .s3-img {
+        width: 100%;
+        padding: 30px 0px;
+
+    }
+
+    .mask {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition: .5s;
+        opacity: 0;
+
+        /* position: relative; */
+    }
+
+    .textbox {
+        width: 160px;
+        height: 160px;
+        padding: 18px 0;
+        text-align: center;
+        font-size: 78px;
+        background-color: bisque;
+        color: rgb(124, 11, 11);
+        font-weight: 900;
+
+        transition: 1s;
+
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+
+    .s3-img:hover .mask {
+        opacity: 1;
+    }
+
+    .s3-img:hover .mask .textbox {
+        top: 50%
+    }
+
+    @media (max-width: 540px) {
+        .scetion-3 {
+            display: none;
+        }
+    }
+
+
+    .scetion-4 {
+        margin: 30px 0px;
+    }
+
+
+    .scetion-6 {
+        margin: 30px 0px;
+    }
+
+    .scetion-8 {
+        margin: 30px 0px;
+    }
+
+    .scetion-9 {
+        background-color: rgb(247, 247, 247);
+        padding: 20px 0px;
+        margin: 30px 0px;
+    }
+
+    .s9-box2 {
+        width: 100%;
+        margin-right: 30px 0px;
+        background-size: cover;
+        text-align: center;
+    }
+
+    .scetion-10 {
+        background-image: url(./img/20200417_0045.jpg);
+        background-size: cover;
+        padding: 0px 0px 10px 0px;
+    }
+
+    .s10-Infomation {
+        color: white;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .s10-class {
+        margin: 0px 30px;
+    }
+
+    .s10-ba-c1 {
+        width: 100%;
+        height: 50px;
+        background-color: #DCB5FF;
+        text-align: center;
+        padding: 10px 0px 0px 120px;
+    }
+
+    .s10-ba-c2 {
+        width: 100%;
+        height: 50px;
+        background-color: #DCB5FF;
+        text-align: center;
+        padding-top: 10px;
+        padding: 10px 0px 0px 120px;
+
+    }
+
+
+    .s10-ba-c3 {
+        width: 100%;
+        height: 50px;
+        background-color: #DCB5FF;
+        text-align: center;
+        padding-top: 10px;
+        padding: 10px 0px 0px 100px;
+    }
+
+
+    .scetion-11 {
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .gotoup {
+        width: 70px;
+        height: 70px;
+        background-color: rgb(224, 85, 252);
+        position: fixed;
+        border-radius: 50%;
+        right: 250px;
+        bottom: 20px;
+        padding: 14px 0px 0px 18px;
+        font-size: 24px;
+        color: white;
+    }
+
+    @media (max-width: 540px) {
+        .card {
+            margin: 10px 0px;
+        }
+    }
+
+    @media (max-width: 540px) {
+        .gotoup {
+            margin: 0px -110px;
+        }
+    }
+
+    @media (max-width: 540px) {
+        .swiper-slide img {
+            width: 100%;
+        }
+
+        .swiper-container {
+            margin: 0px 0px;
+        }
+    }
+
+    .card-text {
+        text-align: justify;
+    }
+
+    
+</style>
+
+<body>
+
+    <!-- navbar -->
+    <div class="NAMbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="./img/logo_0001.jpg" width="60" height="60" class="d-inline-block align-top" alt="">
+                    能量水晶
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active btn-lg">
+                            <a class="nav-link" href="#scetion-9">關於我們</a>
+                        </li>
+                        <li class="nav-item active btn-lg">
+                            <a class="nav-link" href="#scetion-2">水晶種類<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown btn-lg">
+                            <a class="nav-link dropdown-toggle text-dark " href="" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                五行顏色開運手鍊
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#scetion-4">五行顏色-金</a>
+                                <a class="dropdown-item" href="#scetion-5">五行顏色-木</a>
+                                <a class="dropdown-item" href="#scetion-6">五行顏色-水</a>
+                                <a class="dropdown-item" href="#scetion-7">五行顏色-火</a>
+                                <a class="dropdown-item" href="#scetion-8">五行顏色-土</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item btn-lg">
+                            <a class="nav-link text-dark " href="#scetion-10">更多資訊</a>
+                        </li>
+                    </ul>
+
+
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Google" aria-label="Search">
+                        <button class="btn btn-outline-success  my-2 my-sm-0" type="submit">
+                            <img src="./img/20200417_0050.jpg" alt="" srcset="">
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./img/photo_0002.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/photo_0003.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/photo_0004.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/photo_0005.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/photo_0006.jpg" alt="">
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+
+    <!-- 水晶種類分頁? -->
+    <div id="scetion-2" class="scetion-2">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                    aria-selected="true">
+                    <h5>粉 紅 水 晶</h5>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                    aria-controls="profile" aria-selected="false">
+                    <h5>白 水 晶</h5>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                    aria-controls="contact" aria-selected="false">
+                    <h5>紫 水 晶</h5>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact-1" role="tab"
+                    aria-controls="contact-1" aria-selected="false">
+                    <h5>茶 晶</h5>
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-sm">
+                            <h5>代表愛、平靜和幸福。玫瑰晶或粉紅水晶是最受歡迎的水晶，粉紅色石英代表愛、平靜和幸福～在房間裡放置粉紅水晶可以
+                                營造出寧靜、愛的氛圍，有舒緩能量的作用！
+                            </h5>
+                        </div>
+                        <div class="col-sm">
+                            <img src="./img/20200417_0022.jpg" alt="">
+                        </div>
+                        <div class="col-sm">
+                            <img src="./img/20200417_0023.jpg" alt="">
+                        </div>
+                        <div class="col-sm">
+                            <img src="./img/20200417_0003.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm ">
+                            <h5> 代表清晰頭腦、記憶。白水晶、透明水晶可以說是第二受歡迎的，這種水晶有助清晰頭腦、記憶及溝通，可以用來冥想、
+                                接觸靈性層面、平衡能量等，另外也可以消除負面情緒，但要特別注意，有失眠的朋友不建議使用！
+                            </h5>
+                        </div>
+                        <div class="col-sm">
+                            <img src="./img/20200417_0008.jpg" alt="">
+                        </div>
+                        <div class="col-sm">
+                            <img src="./img/20200417_0009.jpg" alt="">
+                        </div>
+                        <div class="col-sm">
+                            <img src="./img/20200417_0010.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <h5>代表淨化能量、鎮靜作用。紫水晶跟靈性有關，因為紫色是最高心靈層次的顏色，它有淨化能量和鎮靜作用～可以用來舒緩壓力
+                                、平衡能量，適合想訓練直覺及心靈學習的朋友使用。
+                            </h5>
+
+                        </div>
+                        <div class="col-sm">
+                            <img src="./img/20200417_0024.jpg" alt="">
+                        </div>
+                        <div class="col-sm">
+                            <img src="./img/20200417_0025.jpg" alt="">
+                        </div>
+                        <div class="col-sm">
+                            <img src="./img/20200417_0026.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="contact-1" role="tabpanel" aria-labelledby="contact-1-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <h5>代表專注工作、提高效率。茶晶是接地氣的好選擇～它是常用來做保護功能的水晶，有助於專注工作、提高溝通效率、
+                                環境的和諧性，在個人跟物質世界中取得平衡。茶晶像徵深層的真理，在黑暗中導向光明！
+                            </h5>
+                        </div>
+                        <div class="col-sm">
+                            <img src="./img/20200417_0027.jpg" alt="">
+                        </div>
+                        <div class="col-sm">
+                            <img src="./img/20200417_0028.jpg" alt="">
+                        </div>
+                        <div class="col-sm">
+                            <img src="./img/20200417_0029.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- 過場parallax -->
+    <div class="scetion-13">
+        <div class="addPhoto">
+            <div class="aosbox" data-aos="fade-right" data-aos-duration="3000">
+                <h1>水 晶</h1>
+                <p>天地間，一棵樹、一滴水、一顆
+                    石頭，都有各自的能量，就是「
+                    磁場」。
+                    用美麗的水晶共振出美好的您。
+                </p>
+                <p>《扭轉命運的樂章》電影中引用了非洲諺語：「
+                    一個人，走得比較快，一起走，走得比較遠。If
+                    you want to go fast, go alone. If you
+                    want to go far, go together.」有福同享，
+                    有難也同享，前者是享受，後者是分享。人生就
+                    是一趟不斷創造關係的旅程。關係的建立，可以
+                    讓生命的網絡更加緊密豐富。
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 五行能量水晶顏色 -->
+    <div class="scetion-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="s3-img" class="s3-img-1">
+                        <a href="#scetion-4">
+                            <img class="img-fluid" src="./img/20200417_0006.jpg" alt="" srcset="">
+                            <div class="mask">
+                                <div class="textbox">金</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="s3-img" class="s3-img-2">
+                        <a href="#scetion-5">
+                            <img class="img-fluid" src="./img/20200417_0006.jpg" alt="" srcset="">
+                            <div class="mask">
+                                <div class="textbox">木</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="s3-img" class="s3-img-3">
+                        <a href="#scetion-6">
+                            <img class="img-fluid" src="./img/20200417_0006.jpg" alt="" srcset="">
+                            <div class="mask">
+                                <div class="textbox">水</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="s3-img" class="s3-img-4">
+                        <a href="#scetion-7">
+                            <img class="img-fluid" src="./img/20200417_0006.jpg" alt="" srcset="">
+                            <div class="mask">
+                                <div class="textbox">火</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="s3-img" class="s3-img-5">
+                        <a href="#scetion-8">
+                            <img class="img-fluid" src="./img/20200417_0006.jpg" alt="" srcset="">
+                            <div class="mask">
+                                <div class="textbox">土</div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 五行產品區 -->
+    <!-- 金行-4 -->
+    <div id="scetion-4" class="scetion-4">
+        <div class="container">
+            <div class="row">
+               
+                <div class="col-sm ">
+                    <div  class="card" style="width: rem;">
+                        <img src="./img/20200417_0059.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body shadow">
+                            <h1 class="s5-card-text ">金</h1>
+                        </div>
+                    </div>
+                </div>
+           
+
+
+
+
+                <div class="col-sm">
+                    <div class="card" style="width: rem;">
+                        <img src="./img/20200417_0011.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body shadow">
+                            <h5>藍光月光石粉水晶手鍊</h5>
+                            <p class="card-text">
+                                月光石自古被認為和月亮女神有關，
+                                它有溫柔而細緻的能力，深入我們內心，協助我們處理陰性能量。
+                                在這個浮躁的世界裡，時間都被要求碎片化充分「利用」，
+                                安靜下來，與自己相處，聆聽自己內心卻變成了最難能可貴的事情。
+
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm">
+                    <div class="card" style="width: rem;">
+                        <img src="./img/20200417_0012.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body shadow">
+                            <h5>石榴石月光石手鍊 </h5>
+                            <p class="card-text">
+                                石榴石也有助促進血液循環，對於經常熬夜加班的人，
+                                加強人的生命力和活力，
+                                對抗憂鬱的心情，使其積極恢復體力。
+                                手鍊選用的石榴石是產自莫桑比克的5A級礦石，
+                                戴在手上是好看的透亮暗紅色光澤，
+                                色澤油潤，雜質很少。
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm">
+                    <div class="card" style="width: rem;">
+                        <img src="./img/20200417_0013.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body shadow">
+                            <h5>月亮石拉長石手鍊</h5>
+                            <p class="card-text">
+                                拉長石也被稱為灰月光石，
+                                具有溫柔而堅強的能量，可以柔化內心，遠離負能量，
+                                對身邊的人和事都多了包容心，
+                                也有助促進情侶之間感情，守護你們的愛情。
+                                有靈性能量的晶石，有助遠離負能量，
+                                增加包容心，讓人內心回歸平靜。
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 木行-5 -->
+    <div id="scetion-5" class="scetion-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm">
+                    <div class="card" style="width: rem;">
+                        <img src="./img/20200417_0058.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body shadow">
+                            <h1 class="s5-card-text">木</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card" style="width: rem;">
+                        <img src="./img/20200417_0018.jpg" class="card-img-top" alt="...">
+                        <div class="card-body shadow">
+                            <h5>海藍寶10mm單圈手鍊</h5>
+                            <p class="card-text">自古以來海藍寶都被認為是海中精靈的化身，
+                                具有水元素的能量，
+                                配戴海藍寶可以守護航行平安，
+                                因此對出門遠行和旅行的人，也會守護路途平安順利。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card" style="width: rem;">
+                        <img src="./img/20200417_0019.jpg" class="card-img-top" alt="...">
+                        <div class="card-body shadow">
+                            <h5>天河石粉水晶手鍊</h5>
+                            <p class="card-text">天河石有吸收負面能量的能力，
+                                將正面能量導入人類能量場裡，
+                                等於得到女神的祝福。粉水晶讓心輪緩緩展開，
+                                放下“心生怨恨”等負面想法，回到愛的頻率。
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm">
+                    <div class="card" style="width: rem;">
+                        <img src="./img/20200417_0017.jpg" class="card-img-top" alt="...">
+                        <div class="card-body shadow">
+                            <h5>橄欖石珍珠14K包金手鍊</h5>
+                            <p class="card-text">橄欖石對應人體的心輪和太陽神經叢，
+                                是一種很好的療癒晶石，可以強化人體的磁性能量場，
+                                調整緊張無法放鬆的能量，有助緩解長期的負面思考，
+                                清理負能量。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 水行-6 -->
+    <div id="scetion-6" class="scetion-6">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm">
+                    <div class="card" style="width: rem;">
+                        <img src="./img/20200417_0060.jpg" class="card-img-top" alt="...">
+                        <div class="card-body shadow">
+                            <h1 class="s5-card-text">水</h1>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-sm">
+                    <div class="card" style="width: rem;">
+                        <img src="./img/20200417_0033.jpg" class="card-img-top" alt="...">
+                        <div class="card-body shadow">
+                            <h5>黑髮晶10mm手鍊</h5>
+                            <p class="card-text">黑髮晶
+                                內含的黑色針狀或髮狀的物質是黑碧璽。
+                                有很強的專注的能力，能夠幫助屏蔽雜念並專心一致.
+                                對事業有幫助，也可以增加佩戴者的領袖魅力。
+                                能排除濁氣和負面能量的效果，
+                                排除毒素情緒和負面想法的部份。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card" style="width: rem;">
+                        <img src="./img/20200417_0032.jpg" class="card-img-top" alt="...">
+                        <div class="card-body shadow">
+                            <h5>黑曜石黃水晶手鍊</h5>
+                            <p class="card-text">
+                                在南美洲的血祭儀式裡，巫師認為黑曜石可以避免靈魂的糾纏，
+                                所以後來黑曜石也常被認為能夠驅逐邪惡的力量。
+                                黑曜石也具有鏡子的功能，可以反射負面的能量，
+                                可以守護我們的心靈的空間，
+                                有助負面能量對我們的侵害。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card" style="width: rem;">
+                        <img src="./img/20200417_0031.jpg" class="card-img-top" alt="...">
+                        <div class="card-body shadow">
+                            <h5>5A磷灰石天河石手鍊</h5>
+                            <p class="card-text">磷灰石對應人體的喉輪，有助我們的磁性能量場擴張，
+                                讓我們感覺到安全與穩定，
+                                讓我們敢於去夢想，不受阻礙，去除心中的矛盾感。
+                                天河石屬於三斜晶系的礦石，它具有吸收負面能量的能力，
+                                並能夠將正面能量導入人類能量場裡。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 火行-7 -->
+    <div id="scetion-7" class="scetion-7">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm">
+                    <div class="card" style="width: rem;">
+                        <img src="./img/20200417_0061.jpg" class="card-img-top" alt="...">
+                        <div class="card-body shadow">
+                            <h1 class="s5-card-text">火</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card" style="width: rem;">
+                        <img src="./img/20200417_0036.jpg" class="card-img-top" alt="...">
+                        <div class="card-body shadow">
+                            <h5>5A草莓晶8mm手鍊</h5>
+                            <p class="card-text">草莓晶則可以讓心輪緩緩展開，心情放鬆，
+                                放下“心生怨恨”等負面想法，回到愛的頻率，
+                                重新感動於生命的美好，
+                                也讓周圍的人都能感受到愛，有助招好人緣和桃花緣
+                                因為心境平和，也增進待人處事的圓潤和諧，容易得貴人相處。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card" style="width: rem;">
+                        <img src="./img/20200417_0037.jpg" class="card-img-top" alt="...">
+                        <div class="card-body shadow">
+                            <h5>硃砂石榴石14KGF手鏈</h5>
+                            <p class="card-text">硃砂是由天然硃砂粉壓製成的
+                                可以對抗外來邪惡的負能量，使人沉心靜氣，意念集中。
+                                尤其對於犯太歲的人，有辟邪消災的作用。
+                                石榴石讓人在感到沉悶沒有活力的時候，能量慢慢沉澱下來，⁠回到生活和工作時重獲精神。⁠
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm">
+                    <div class="card" style="width: rem;">
+                        <img src="./img/20200417_0038.jpg" class="card-img-top" alt="...">
+                        <div class="card-body shadow">
+                            <h5>紫水晶手鍊 </h5>
+                            <p class="card-text">紫水晶對應七輪中的眉心輪，
+                                散發高貴的紫光，古時就被當作護身符配戴，
+                                有助於讓人保持頭腦清晰，理性而冷靜地思考問題。
+                                它也使內心氣質散發出吸引之緣，容易得貴人相處
+                                對社交和人緣都有很大的幫助。
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 土行-8 -->
+    <div id="scetion-8" class="scetion-8">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm">
+                    <div class="card" style="width: rem;">
+                        <img src="./img/20200417_0062.jpg" class="card-img-top" alt="...">
+                        <div class="card-body shadow">
+                            <h1 class="s5-card-text">土</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card" style="width: rem;">
+                        <img src="./img/20200417_0040.jpg" class="card-img-top" alt="...">
+                        <div class="card-body shadow">
+                            <h5>茶水晶金髮晶煙晶手鍊</h5>
+                            <p class="card-text">茶晶
+                                讓人從虛弱和失衡的狀況恢復平衡，
+                                不再留在虛妄幻想的世界
+                                強化執的行實踐的能力。
+                                金髮晶被譽為「財富之石」，
+                                可以增強膽識，
+                                信心和決斷力，堅定自己立場，避免優柔寡斷，
+                                解除自我限制的框架。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card" style="width: rem;">
+                        <img src="./img/20200417_0041.jpg" class="card-img-top" alt="...">
+                        <div class="card-body shadow">
+                            <h5>黃水晶茶晶招財手鍊</h5>
+                            <p class="card-text">黃水晶能夠帶來生命力和熱情活力，
+                                讓人增加信心和希望，產生過好生活的信念，
+                                脫離自己設下的界線框架，善加運用自己的潛能。
+                                增多了企圖心和工作心，
+                                自然能在事業上有進步，也能招來財富，
+                                所以黃水晶一直是事業財富的象徵。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card" style="width: rem;">
+                        <img src="./img/20200417_0042.jpg" class="card-img-top" alt="...">
+                        <div class="card-body shadow">
+                            <h5>金髮晶珍珠招財手鍊</h5>
+                            <p class="card-text">
+                                金髮晶
+                                晶體內像是一條條髮絲，長在水晶裡。
+                                晶瑩剔透，髮絲濃密清晰，絲絲可見。
+                                被譽為「財富之石」，
+                                它的磁場能量增強膽識，
+                                為配戴者增加信心和決斷力，堅定自己立場，避免優柔寡斷，
+                                也可令個人的氣場擴大和增加亮度。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 關於我們 -->
+    <div id="scetion-9" class="scetion-9">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="class">
+                        <h4>關於我們 | ABOUT US</h4>
+                        <h5>能量水晶</h5>
+                        <h5>《品牌理念》</h5>
+                        <p>我們總想追逐快樂，卻在得失中忘記自己，生活中的起起落落，才逐漸明白心靈的平靜比快樂更重要。
+                            用設計帶一份寧靜給人們，把天然之美帶入生活。
+                            學習平和柔軟的心，接受跟自己和解，不要急躁，慢慢來，好好的愛自己。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="s9-box2">
+                        <img src="./img/20200417_0043s.jpg" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 更多資訊 -->
+    <div id="scetion-10" class="scetion-10">
+        <div class="container">
+            <div class="s10-Infomation">
+                <h5>__________________________________________________ 更 多 資 訊
+                    ________________________________________________</h5>
+            </div>
+
+            <div class="s10-class">
+
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card" style="width: 20rem ; min-height: 472px;">
+                            <div class="s10-ba-c1">
+                                <h5 class="card-text ">水 晶 保 養</h5>
+                            </div>
+                            <div class="card-body ">
+                                <p>1. 水晶玉石的硬度質地各有不同，勿被質地堅硬的東西碰到、撞擊，以免產生刮痕、破裂。</p>
+                                <p>2. 避免接觸化學物品、香水、美髮用品或化妝品，以免沾染化學物品，造成損傷。</p>
+                                <p>3. 未配戴時請放置陰涼處保存。</p>
+                                <p> 4. 若銀飾產生氧化反黑的現象，請使用拭銀布擦拭。未佩戴銀飾時，請將銀飾收納至袋內，避免長期接觸空氣而加速氧化。</p>
+
+                                <img class="img-fluid" src="./img/20200417_0048.jpg" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card" style="width: 20rem; min-height: 472px;">
+                            <div class="s10-ba-c2">
+                                <h5 class="card-text ">手 圍 尺 寸</h5>
+                            </div>
+                            <div class="card-body">
+                                <p>量手圍的方法</p>
+                                <p>1.皮尺：皮尺輕貼手腕繞一圈，勿勒緊。</p>
+                                <p> 2.線狀物：無彈性線狀物，輕貼手腕繞一圈，做好記號後用尺量幾公分。</p>
+                                <p>※喜歡戴合些建議加0.5公分。
+                                    習慣戴鬆些建議加1公分。
+                                </p>
+
+                                <img src="./img/20200417_0047s.jpg" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card " style="width: 20rem; min-height: 472px;">
+                            <div class="s10-ba-c3">
+                                <h5 class="card-text ">客 製 化 服 務</h5>
+                            </div>
+                            <div class="card-body">
+                                <p>客製設計服務</p>
+                                <p>請填妥表格，讓我們了解您的意向，收到資料後我們會盡快跟您聯絡。</p>
+                                <p>如果您有清晰的想法，您也可以畫一張簡單的設計草圖給我們 </p>
+                                <p> power@gmail.com</p>
+                                <img src="./img/20200417_0049.jpg" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- 頁腳 -->
+    <div class="scetion-11 bg-light">
+        Copyright © 2020 能量水晶
+    </div>
+
+    <!-- gotoup -->
+    <div class="scetion-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <a href="#">
+                        <div class="gotoup">Up</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
